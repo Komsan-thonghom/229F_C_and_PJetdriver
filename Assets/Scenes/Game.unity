@@ -209,7 +209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764588027651297081, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: m_Name
-      value: Sphere 1
+      value: Meteorite
       objectReference: {fileID: 0}
     - target: {fileID: 4678129350134685563, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: target
@@ -290,7 +290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764588027651297081, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: m_Name
-      value: Sphere 1
+      value: Meteorite
       objectReference: {fileID: 0}
     - target: {fileID: 4678129350134685563, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: target
@@ -367,7 +367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764588027651297081, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: m_Name
-      value: Sphere 1
+      value: Meteorite
       objectReference: {fileID: 0}
     - target: {fileID: 4678129350134685563, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: target
@@ -444,7 +444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764588027651297081, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: m_Name
-      value: Sphere 1
+      value: Meteorite
       objectReference: {fileID: 0}
     - target: {fileID: 4678129350134685563, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: target
@@ -624,7 +624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764588027651297081, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: m_Name
-      value: Sphere (1)
+      value: Meteorite
       objectReference: {fileID: 0}
     - target: {fileID: 4678129350134685563, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: target
@@ -701,7 +701,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764588027651297081, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: m_Name
-      value: Sphere 1
+      value: Meteorite
       objectReference: {fileID: 0}
     - target: {fileID: 4678129350134685563, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: target
@@ -978,10 +978,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055318982}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1000, y: 1000, z: 1000}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1055318984
 MeshRenderer:
@@ -1041,7 +1041,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1055318982}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1227.86, y: 54, z: -666}
+  m_LocalPosition: {x: 1227.86, y: 54, z: -669}
   m_LocalScale: {x: 4.8128, y: 100, z: 2092.4346}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1158,7 +1158,6 @@ GameObject:
   - component: {fileID: 1768213746}
   - component: {fileID: 1768213745}
   - component: {fileID: 1768213747}
-  - component: {fileID: 1768213748}
   m_Layer: 0
   m_Name: StarShip
   m_TagString: Untagged
@@ -1258,7 +1257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0119f9debc57aa34abb6e22ad4ccc728, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 150
+  rb: {fileID: 1768213746}
+  Speed: 200
 --- !u!75 &1768213745
 ConstantForce:
   m_ObjectHideFlags: 0
@@ -1285,7 +1285,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 12
+  m_Constraints: 116
   m_CollisionDetection: 0
 --- !u!114 &1768213747
 MonoBehaviour:
@@ -1296,24 +1296,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1768213739}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5204fed097319d04bb065fb486e9b331, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b6bca5c47cba284c835d4ab1034b1ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1768213748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1768213739}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1df1298eabcdde547bf75e8c58729725, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forwardSpeed: 1200
-  leftRightSpeed: 500
-  minMaxX: {x: -1200, y: 0}
+  SceneBuild: 2
 --- !u!1 &2071046895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,10 +1327,10 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071046895}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1000, y: 1000, z: 1000}
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2071046898
 MeshRenderer:
@@ -1404,7 +1390,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2071046895}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 1227.86, y: 54, z: -814}
+  m_LocalPosition: {x: 1227.86, y: 54, z: -811}
   m_LocalScale: {x: 5.235515, y: 100, z: 2092.4346}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1476,7 +1462,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764588027651297081, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: m_Name
-      value: Sphere 1
+      value: Meteorite
       objectReference: {fileID: 0}
     - target: {fileID: 4678129350134685563, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: target
@@ -1541,7 +1527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2764588027651297081, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: m_Name
-      value: Sphere
+      value: Meteorite
       objectReference: {fileID: 0}
     - target: {fileID: 4678129350134685563, guid: 3700fb3ab87dd9f46b4a90fdb57fde66, type: 3}
       propertyPath: target
