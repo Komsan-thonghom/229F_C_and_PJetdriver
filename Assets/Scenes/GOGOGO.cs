@@ -1,23 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class GOGOGO : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    { }
-    public float moveSpeed = 5f; // ความเร็วในการเคลื่อนที่
+    private Vector3 PlayerMovement;
+    private Vector2 MouseInput;
+    private float xRot;
+    [SerializeField] private Rigidbody rb;
+
+    [SerializeField] private float Speed; 
 
     void Update()
     {
-        // เคลื่อนที่ไปข้างหน้า (ลำดับการทำงานคือ W ถ้ากด A หรือ D จะเลื่อนไปข้างหน้าได้เช่นกัน)
-        float verticalInput = Input.GetAxis("Vertical");
-        transform.Translate(Vector3.forward * verticalInput * moveSpeed * Time.deltaTime);
+        PlayerMovement = new Vector3(Input.GetAxis("Horizontal"), 0f, Input.GetAxis("Vertical"));
+        MovePlayer();
 
-        // เคลื่อนที่ไปด้านข้าง (ซ้าย-ขวา)
-        float horizontalInput = Input.GetAxis("Horizontal");
-        Vector3 movement = new Vector3(horizontalInput, 0f, 0f);
-        transform.Translate(movement * moveSpeed * Time.deltaTime);
     }
+
+    private void MovePlayer() 
+    {
+        Vector3 MoveVector = transform.TransformDirection(PlayerMovement) * Speed; 
+        rb.velocity = new Vector3(MoveVector.x, rb.velocity.y, MoveVector.z);
+
+  
+    }
+
 }
+
