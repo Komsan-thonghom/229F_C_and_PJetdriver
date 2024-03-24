@@ -24,9 +24,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Tie.unity
     guid: 32dda2ce744f82b4f8c713498147dcce
+<<<<<<< HEAD
   - enabled: 1
     path: Assets/Scenes/End credits.unity
     guid: f309bc18ce9b8574fa8bed7a225e5458
 >>>>>>> 241abaf95043e0528120ab6459c1e12cd4f8e874
 >>>>>>> bf3819520b446d885878bbcc48597716b010e487
+=======
+>>>>>>> parent of 7ead061 (V10)
   m_configObjects: {}
