@@ -1100,6 +1100,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2620365709462845396, guid: 7001ad4285fc9324ebe16ff6b41b7a92, type: 3}
   m_PrefabInstance: {fileID: 1288678242}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &890446833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890446826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9241cd24bb02dd9498fffab245615148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneBuild: 3
 --- !u!1001 &895744205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2387,7 +2400,6 @@ GameObject:
   - component: {fileID: 2129535421}
   - component: {fileID: 2129535420}
   - component: {fileID: 2129535419}
-  - component: {fileID: 2129535423}
   m_Layer: 0
   m_Name: NahIWin
   m_TagString: Untagged
@@ -2473,19 +2485,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2129535423
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129535418}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9241cd24bb02dd9498fffab245615148, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SceneBuild: 0
 --- !u!1001 &2126631242470605890
 PrefabInstance:
   m_ObjectHideFlags: 0

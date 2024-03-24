@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tie.unity
     guid: 32dda2ce744f82b4f8c713498147dcce
+  - enabled: 1
+    path: Assets/Scenes/End credits.unity
+    guid: f309bc18ce9b8574fa8bed7a225e5458
   m_configObjects: {}
